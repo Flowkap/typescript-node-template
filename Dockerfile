@@ -15,5 +15,5 @@ ENV NODE_ENV production
 WORKDIR /usr/src/app
 # COPY --from=deps /app/node_modules/ ./node_modules/
 COPY --from=build /app/package.json .
-COPY --from=build /app/build/src/ ./
+COPY --from=build /app/build/ ./
 ENTRYPOINT [ "node", "app.js" ]

@@ -2,8 +2,6 @@ extends: "@istanbuljs/nyc-config-typescript" # this is to fix broken covered lin
 extension:
 - ".ts"
 - ".tsx"
-include:
-- "**"
 exclude:
 - "**/*.d.ts"
 - "**/app.ts"
