@@ -12,3 +12,7 @@ export class Person implements IPerson {
         this.firstName = data.firstName;
     }
 }
+
+export function nothing() {
+    console.log("uncovered");
+}

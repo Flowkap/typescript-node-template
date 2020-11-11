@@ -1,10 +1,12 @@
-extends: "@istanbuljs/nyc-config-typescript" # this is to fix broken covered lines
 extension:
 - ".ts"
 - ".tsx"
+include:
+- "**"
 exclude:
 - "**/*.d.ts"
 - "**/app.ts"
+- "**/*.test.ts"
 reporter:
 - html
 - lcovonly

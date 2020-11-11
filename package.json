@@ -8,8 +8,8 @@
     "clean": "rm -rf build .nyc_output coverage",
     "lint": "npx eslint src",
     "build": "npm run clean && npm run lint && npx tsc -p .",
-    "start": "npm run build && node build/app.js",
-    "test": "npm run build && nyc npx mocha build/**/*.test.js --exit",
+    "start": "npm run build && node build/src/app.js",
+    "test": "npm run build && nyc npx mocha build/**/*.test.js build/test/**/*.js --exit",
     "docker": "docker build -t typescript-node-template ."
   },
   "repository": {

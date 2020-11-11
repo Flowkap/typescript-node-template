@@ -4,14 +4,17 @@
         "target": "es2020",
         "lib": ["es2020"],
         "outDir": "build",
-        "rootDir": "src",
+        "rootDir": ".",
         "sourceMap": true,
         "strict": true,
         "declaration": true,
-        "noUnusedLocals": true
+        "noUnusedLocals": true,
+        "types": ["mocha", "node"],
+        "typeRoots": ["node_modules/@types"]
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "test/**/*.ts"
     ],
     "exclude": [
         "node_modules",

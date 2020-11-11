@@ -10,7 +10,7 @@
             "request": "launch",
             "sourceMaps": true,
             "cwd": "${workspaceFolder}/build/",
-            "program": "${workspaceFolder}/build/app.js",
+            "program": "${workspaceFolder}/build/src/app.js",
             "preLaunchTask": "npm: build",
             "outputCapture": "std",
             "internalConsoleOptions": "openOnSessionStart"
@@ -26,7 +26,8 @@
                 "999999",
                 "--colors",
                 "--exit",
-                "${workspaceFolder}/build/**/*.test.js"
+                "${workspaceFolder}/build/**/*.test.js",
+                "${workspaceFolder}/build/test/**/*.js"
             ],
             "sourceMaps": true,
             "preLaunchTask": "npm: build",
