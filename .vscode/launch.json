@@ -10,7 +10,7 @@
             "request": "launch",
             "sourceMaps": true,
             "cwd": "${workspaceFolder}/build/",
-            "program": "${workspaceFolder}/build/src/app.js",
+            "program": "${workspaceFolder}/build/app.js",
             "preLaunchTask": "npm: build",
             "outputCapture": "std",
             "internalConsoleOptions": "openOnSessionStart"
@@ -21,16 +21,12 @@
             "request": "launch",
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
-                "--require source-map-support/register",
-                "--timeout",
-                "999999",
-                "--colors",
+                "--no-timeouts", "--colors",
+                "--require", "ts-node/register",
                 "--exit",
-                "${workspaceFolder}/build/**/*.test.js",
-                "${workspaceFolder}/build/test/**/*.js"
+                "${workspaceFolder}/src/**/*.test.ts",
+                "${workspaceFolder}/test/**/*.ts"
             ],
-            "sourceMaps": true,
-            "preLaunchTask": "npm: build",
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
@@ -39,15 +35,11 @@
             "request": "launch",
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
-                "--require source-map-support/register",
-                "--timeout",
-                "999999",
-                "--colors",
+                "--no-timeouts", "--colors",
+                "--require", "ts-node/register",
                 "--exit",
-                "${workspaceFolder}/build/**/${fileBasenameNoExtension}.js"
+                "${workspaceFolder}/**/${fileBasenameNoExtension}.ts"
             ],
-            "sourceMaps": true,
-            "preLaunchTask": "npm: build",
             "internalConsoleOptions": "openOnSessionStart"
         }
     ]

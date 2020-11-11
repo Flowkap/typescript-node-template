@@ -13,6 +13,6 @@ export class Person implements IPerson {
     }
 }
 
-export function nothing() {
+export function nothing(): void {
     console.log("uncovered");
 }
