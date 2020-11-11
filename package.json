@@ -1,0 +1,48 @@
+{
+  "name": "typescript-node-template",
+  "version": "0.1.0",
+  "description": "A modern typescript node.js service template!",
+  "main": "app.js",
+  "scripts": {
+    "purge": "rm -rf node_modules package-lock.json && npm run clean",
+    "clean": "rm -rf build .nyc_output coverage",
+    "lint": "npx eslint src",
+    "build": "npm run clean && npm run lint && npx tsc -p .",
+    "start": "npm run build && node build/src/app.js",
+    "test": "npm run build && nyc npx mocha build/**/*.test.js --exit",
+    "docker": "docker build -t typescript-node-template ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flowkap/typescript-node-template.git"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "typescript",
+    "ts",
+    "service",
+    "template"
+  ],
+  "author": "flowkap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Flowkap/typescript-node-template/issues"
+  },
+  "homepage": "https://github.com/Flowkap/typescript-node-template#readme",
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "1.0.1",
+    "@types/chai": "4.2.14",
+    "@types/mocha": "8.0.4",
+    "@types/node": "14.14.7",
+    "@typescript-eslint/eslint-plugin": "4.7.0",
+    "@typescript-eslint/parser": "4.7.0",
+    "chai": "4.2.0",
+    "eslint": "7.13.0",
+    "eslint-plugin-sonarjs": "0.5.0",
+    "mocha": "8.2.1",
+    "nyc": "15.1.0",
+    "source-map-support": "0.5.19",
+    "typescript": "4.0.5"
+  }
+}
