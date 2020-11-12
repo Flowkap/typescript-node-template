@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/{USERNAME}/{REPO-NAME}.png?branch=master)](https://travis-ci.org/{USERNAME}/{REPO-NAME})
+[![Build Status](https://travis-ci.org/Flowkap/typescript-node-template.svg?branch=main)](https://travis-ci.org/Flowkap/typescript-node-template)
 
 # Content
 <!-- TOC -->
