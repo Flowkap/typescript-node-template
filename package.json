@@ -6,10 +6,10 @@
   "scripts": {
     "purge": "rm -rf node_modules package-lock.json && npm run clean",
     "clean": "rm -rf build .nyc_output coverage",
-    "lint": "npx eslint src",
-    "build": "npm run clean && npm run lint && npx tsc -p .",
+    "lint": "eslint src",
+    "build": "npm run clean && npm run lint && tsc -p .",
     "start": "npm run build && node build/app.js",
-    "test": "npm run lint && nyc npx mocha src/**/*.test.ts test/**/*.ts --exit --require ts-node/register  --require source-map-support/register --recursive",
+    "test": "npm run lint && nyc mocha src test",
     "docker": "docker build -t typescript-node-template ."
   },
   "repository": {
@@ -17,12 +17,12 @@
     "url": "git+https://github.com/Flowkap/typescript-node-template.git"
   },
   "keywords": [
-    "node",
-    "node.js",
-    "typescript",
-    "ts",
+    "node", "node.js",
+    "typescript", "ts",
     "service",
-    "template"
+    "template",
+    "mocha", "chai", "nyc",
+    "ts-node", "sinon", "eslint", "sonarts"
   ],
   "author": "flowkap",
   "license": "MIT",

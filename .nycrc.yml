@@ -3,12 +3,12 @@ extends: "@istanbuljs/nyc-config-typescript"
 all: true
 
 reporter:
-- html
-- lcovonly
-- clover
-# those 2 are for commandline outputs
-- text
-- text-summary
+  - html
+  - lcovonly
+  - clover
+  # those 2 are for commandline outputs
+  - text
+  - text-summary
 report-dir: coverage
 
 # Coverage gates

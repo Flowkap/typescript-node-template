@@ -21,12 +21,8 @@
             "request": "launch",
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
-                "--no-timeouts", "--colors",
-                // according to https://github.com/istanbuljs/istanbuljs/tree/master/packages/nyc-config-typescript
-                "--require", "ts-node/register", "--recursive",
-                "--exit",
-                "${workspaceFolder}/src/**/*.test.ts",
-                "${workspaceFolder}/test/**/*.ts"
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/test"
             ],
             "internalConsoleOptions": "openOnSessionStart"
         },
@@ -36,10 +32,6 @@
             "request": "launch",
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
-                "--no-timeouts", "--colors",
-                // according to https://github.com/istanbuljs/istanbuljs/tree/master/packages/nyc-config-typescript
-                "--require", "ts-node/register", "--recursive",
-                "--exit",
                 "${workspaceFolder}/**/${fileBasenameNoExtension}.ts"
             ],
             "internalConsoleOptions": "openOnSessionStart"
