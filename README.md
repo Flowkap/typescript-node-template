@@ -74,6 +74,8 @@ npm test
 * Tests can be put anywhere in `src` if you name the files `*.test.ts`
 * Theres also a `test` directory which you can use for any kind of integration tests or whatever you desire. All files in hee are incorporated no matter the name.
 
+Mocha config is found in [.mocharc.yml](./.mocharc.yml) whereas the sources are specified by location (like launch.json for vscode selects individual files)
+
 ### Coverage
 Defined in [.nycrc.yml](./.nycrc.yml) + additional call arguments for mocha in [package.json](./package.json) specifcally `--require ts-node/register  --require source-map-support/register --recursive`.
 
