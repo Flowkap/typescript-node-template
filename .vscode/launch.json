@@ -21,6 +21,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
+                "--no-timeouts",
                 "${workspaceFolder}/src",
                 "${workspaceFolder}/test"
             ],
@@ -32,6 +33,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
+                "--no-timeouts",
                 "${workspaceFolder}/**/${fileBasenameNoExtension}.ts"
             ],
             "internalConsoleOptions": "openOnSessionStart"
