@@ -1,11 +1,17 @@
-[![Build Status](https://travis-ci.org/Flowkap/typescript-node-template.svg?branch=main)](https://travis-ci.org/Flowkap/typescript-node-template) [![codecov](https://codecov.io/gh/Flowkap/typescript-node-template/branch/main/graph/badge.svg)](https://codecov.io/gh/Flowkap/typescript-node-template) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) [![HitCount](http://hits.dwyl.com/flowkap/typescript-node-template.svg)](http://hits.dwyl.com/flowkap/typescript-node-template)
+<div align="center">
 
+[![Build Status](https://travis-ci.org/Flowkap/typescript-node-template.svg?branch=main)](https://travis-ci.org/Flowkap/typescript-node-template)
+[![codecov](https://codecov.io/gh/Flowkap/typescript-node-template/branch/main/graph/badge.svg)](https://codecov.io/gh/Flowkap/typescript-node-template)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+[![HitCount](http://hits.dwyl.com/Flowkap/typescript-node-template.svg)](http://hits.dwyl.com/Flowkap/typescript-node-template)
+
+</div>
 
 # Content
 <!-- TOC -->
 
 - [Content](#content)
-- [About](#about)
+- [Why?](#why)
 - [Features](#features)
   - [Linting and code quality settings](#linting-and-code-quality-settings)
   - [Tests](#tests)
@@ -19,7 +25,7 @@
 
 <!-- /TOC -->
 
-# About
+# Why?
 
 Whilst working with typescript for a while now I found that most examples on the web are still for node.js with plain JavaScript. Especially when it comes to a full template example with **latest** versions of used tools like `eslint` instead of still using deprected `tslint` and so on. So I thought it might be a good idea to make an up-to-date service boilerplate including:
 
