@@ -22,7 +22,8 @@
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
                 "--no-timeouts", "--colors",
-                "--require", "ts-node/register",
+                // according to https://github.com/istanbuljs/istanbuljs/tree/master/packages/nyc-config-typescript
+                "--require", "ts-node/register", "--recursive",
                 "--exit",
                 "${workspaceFolder}/src/**/*.test.ts",
                 "${workspaceFolder}/test/**/*.ts"
@@ -36,7 +37,8 @@
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
                 "--no-timeouts", "--colors",
-                "--require", "ts-node/register",
+                // according to https://github.com/istanbuljs/istanbuljs/tree/master/packages/nyc-config-typescript
+                "--require", "ts-node/register", "--recursive",
                 "--exit",
                 "${workspaceFolder}/**/${fileBasenameNoExtension}.ts"
             ],

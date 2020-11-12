@@ -1,13 +1,7 @@
-extends: "@istanbuljs/nyc-config-typescript" # this is to fix broken covered lines
-extension:
-- ".ts"
-- ".tsx"
-include:
-- "src/**/*.ts"
-exclude:
-- "**/*.d.ts"
-- "**/app.ts"
-- "**/*.test.ts"
+# according to https://github.com/istanbuljs/istanbuljs/tree/master/packages/nyc-config-typescript
+extends: "@istanbuljs/nyc-config-typescript"
+all: true
+
 reporter:
 - html
 - lcovonly
@@ -23,7 +17,3 @@ functions: 90
 lines: 80
 statements: 80
 branches: 70
-all: true
-
-require:
-- "ts-node/register"
