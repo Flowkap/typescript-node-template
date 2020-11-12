@@ -32,7 +32,9 @@ I will probably extend to show off:
 * Fastify with native async await in Typescript
 * Sinon for mocking / stubbing
 
-The biggest challende was trying to make code coverage work without ts-node which unfortunately wasn't really possible. It kindof worked but did not track any files that were not called in any test counteracting the purpose of finding uncovered code. So this template uses ts-node for all test execution and a transpiled build (no ts-node hence for "prod") to run the app.
+The biggest challenge was trying to make code coverage work without ts-node which unfortunately wasn't really possible. It kindof worked but did not track any files that were not called in any test counteracting the purpose of finding uncovered code. So this template uses ts-node for all test execution and a transpiled build (no ts-node hence for "prod") to run the app.
+
+I probably added way more docs and references than needed but maybe it will help someone new to the topic at some point in the future! :)
 
 # Features
 

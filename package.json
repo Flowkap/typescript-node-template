@@ -9,7 +9,7 @@
     "lint": "npx eslint src",
     "build": "npm run clean && npm run lint && npx tsc -p .",
     "start": "npm run build && node build/app.js",
-    "test": "npm run lint && nyc npx mocha src/**/*.test.ts test/**/*.ts --exit  --require ts-node/register  --require source-map-support/register --recursive",
+    "test": "npm run lint && nyc npx mocha src/**/*.test.ts test/**/*.ts --exit --require ts-node/register  --require source-map-support/register --recursive",
     "docker": "docker build -t typescript-node-template ."
   },
   "repository": {
