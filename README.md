@@ -3,7 +3,9 @@
 [![Build Status](https://travis-ci.org/Flowkap/typescript-node-template.svg?branch=main)](https://travis-ci.org/Flowkap/typescript-node-template)
 [![codecov](https://codecov.io/gh/Flowkap/typescript-node-template/branch/main/graph/badge.svg)](https://codecov.io/gh/Flowkap/typescript-node-template)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-[![HitCount](http://hits.dwyl.com/Flowkap/typescript-node-template.svg)](http://hits.dwyl.com/Flowkap/typescript-node-template)
+
+<!-- until fixture of https://github.com/dwyl/hits/issues/101 -->
+<!-- [![HitCount](http://hits.dwyl.com/Flowkap/typescript-node-template.svg)](http://hits.dwyl.com/Flowkap/typescript-node-template) -->
 
 </div>
 
