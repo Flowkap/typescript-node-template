@@ -4,6 +4,4 @@ require:
   - source-map-support/register
 recursive: true
 color: true
-extension:
-  - ts
-  - test.ts
+exit: true

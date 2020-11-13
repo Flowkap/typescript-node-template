@@ -1,12 +1,21 @@
-import { Person } from "./types/Person";
 
-export async function run(): Promise<void> {
-    const { lastName, firstName } = new Person({
-        firstName: "Rick",
-        lastName: "Sanchez",
-    });
+import { fastify, FastifyInstance } from "fastify";
+import { register } from "./routes";
 
-    console.log(`Hello ${firstName} ${lastName}!`);
+let app: FastifyInstance;
+export async function start(): Promise<void> {
+    try {
+        app = fastify({ logger: true });
+        register(app);
+        await app.listen(3000, "0.0.0.0");
+    } catch (err) {
+        app.log.error(err);
+        process.exit(1);
+    }
 }
 
-run();
+export async function stop(): Promise<void> {
+    await app.server.close();
+}
+
+// start();
