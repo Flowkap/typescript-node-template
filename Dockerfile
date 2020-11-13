@@ -17,4 +17,6 @@ WORKDIR /usr/src/app
 # COPY --from=deps /app/node_modules/ ./node_modules/
 COPY --from=build /app/package.json .
 COPY --from=build /app/build/ ./
+RUN chown -R node:node ./
+USER node
 ENTRYPOINT [ "node", "app.js" ]

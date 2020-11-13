@@ -122,6 +122,7 @@ Defined in [launch.json](./.vscode/launch.json)
 
 ### Docker
 Defined in [Dockerfile](./Dockerfile)
+The image is built to run rootless. Refer to: https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#non-root-user.
 
 ```
 npm i
