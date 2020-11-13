@@ -18,4 +18,4 @@ export async function stop(): Promise<void> {
     await app.server.close();
 }
 
-// start();
+start();

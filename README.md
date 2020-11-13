@@ -37,10 +37,7 @@ Whilst working with typescript for a while now I found that most examples on the
 * Out of the box VsCode config for debugging app + tests no matter where with proper sourcemaps
 * Multi stage docker build
 * All type infos needed as well
-
-I will probably extend to show off:
-
-* Fastify with native async await in Typescript
+* Fastify with native async await in Typescript, including mocked / stubbed and spy tests as well as using inject to test the calls
 * Sinon for mocking / stubbing
 
 The biggest challenge was trying to make code coverage work without ts-node which unfortunately wasn't really possible. It kindof worked but did not track any files that were not called in any test counteracting the purpose of finding uncovered code. So this template uses ts-node for all test execution and a transpiled build (no ts-node hence for "prod") to run the app.
